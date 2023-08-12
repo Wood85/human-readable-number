@@ -147,12 +147,3 @@ module.exports = function toReadable(number) {
 		return result;
 	}
 }
-
-function reverse(number) {
-	let str = '' + number;
-	const arr = str.split('');
-	const filteredArr = arr.filter((elem) => elem !== '-');
-	const reversedStr = filteredArr.reverse().join('');
-	const reversedNumber = parseInt(reversedStr, 10);
-	return reversedNumber;
-}
